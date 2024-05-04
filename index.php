@@ -7,13 +7,16 @@ if (isset($_GET['date'])) {
     $API_URL = 'https://whenisthenextmcufilm.com/api';
 }
 
-$ch = curl_init($API_URL);
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+function get_data($url){
+    $ch = curl_init($url);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    $result = curl_exec($ch);
+    $data = json_decode($result, true);
+    curl_close($ch);
+    return $data;
+}
 
-$result = curl_exec($ch);
-$data = json_decode($result, true);
-
-curl_close($ch);
+$data = get_data($API_URL);
 
 $days_until = $data['days_until'];
 $overview = $data['overview'];
