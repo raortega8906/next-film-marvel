@@ -4,7 +4,7 @@
   </a>
 </p>
 
-# Next Films Marvel
+# Next Film Marvel
 
-Next Films Marvel es un pequeño proyecto de PHP para conectarse con una API sencilla y obtener el tiempo restante 
+Next Film Marvel es un pequeño proyecto desarrollado en PHP para conectarse con una API sencilla y obtener el tiempo restante 
 de las próimas Películas de Marvel.
