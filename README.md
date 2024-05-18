@@ -6,5 +6,5 @@
 
 # Next Film Marvel
 
-Next Film Marvel es un pequeño proyecto desarrollado en PHP para conectarse con una API sencilla y obtener el tiempo restante 
-de las próimas Películas de Marvel.
+Next Film Marvel es un pequeño proyecto desarrollado en PHP para conectarse con una API sencilla y obtener el tiempo que falta 
+para próximas Películas de Marvel.
